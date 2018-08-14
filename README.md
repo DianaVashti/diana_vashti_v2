@@ -4,4 +4,4 @@
 2. `npm i`
 3. `npm run start:dev`
 
-* to change from "flower" to "blinker" must hand change code in the landingPage.js state object.
+* to change from "tumbler" to "blinker" must hand change code in the landingPage.js state object.
