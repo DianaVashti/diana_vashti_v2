@@ -20,6 +20,7 @@ const styles = {
   }
 }
 
+// change the text of the setup key in state to 'blinker' to see blicker version
 export default class LandingPage extends Component {
   constructor(props) {
     super(props)
