@@ -16,7 +16,7 @@ const Cell = ({ alive }) => {
     )
   } else if (alive === 0){
     return (
-      <p style={style}>_</p>
+      <p style={style}></p>
     )
   }
 }
