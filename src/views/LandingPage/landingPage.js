@@ -1,4 +1,4 @@
-import React, {Component}  from 'react';
+import React, {Component} from 'react';
 import Cell from './Cell';
 
 const styles = {
@@ -21,6 +21,7 @@ const styles = {
 }
 
 // change the text of the setup key in state to 'blinker' to see blicker version
+// don't forget to rebuild after saving handcoded change
 export default class LandingPage extends Component {
   constructor(props) {
     super(props)
@@ -28,7 +29,6 @@ export default class LandingPage extends Component {
       board: [],
       xsize: 10,
       ysize: 10,
-      dead: 0,
       alive: 1,
       setup: 'flower',
       firstLoad: true,
@@ -104,7 +104,6 @@ export default class LandingPage extends Component {
   }
 
   handleOnClick(){
-    console.log('click')
     return this.updateBoard(this.state.board)
   }
 
@@ -195,7 +194,7 @@ export default class LandingPage extends Component {
           {this.renderBoard()}
         </div>
         <button onClick={this.handleOnClick} style={{marginTop: 50}}>
-          CLick Me
+          Click Me
         </button>
       </div>
     )
