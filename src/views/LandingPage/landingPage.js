@@ -30,7 +30,7 @@ export default class LandingPage extends Component {
       xsize: 10,
       ysize: 10,
       alive: 1,
-      setup: 'flower',
+      setup: 'tumbler',
       firstLoad: true,
       markedForChange: []
     }
@@ -62,7 +62,7 @@ export default class LandingPage extends Component {
         myBoard[1][1] = this.state.alive;
         myBoard[1][2] = this.state.alive;
         this.setState({board: myBoard})
-      } else if(this.state.setup === 'flower' && this.state.firstLoad === true){
+      } else if(this.state.setup === 'tumbler' && this.state.firstLoad === true){
         let myBoard = this.state.board;
         myBoard[2][0] = this.state.alive;
         myBoard[2][1] = this.state.alive;
